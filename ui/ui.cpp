@@ -28,8 +28,7 @@ void CustomizeConsoleWindow() {
             DwmSetWindowAttributeFn(consoleWindow, DWMWA_USE_IMMERSIVE_DARK_MODE, &darkMode, sizeof(darkMode));
         }
         FreeLibrary(dwmapi);
-    }
 
-    SetConsoleTitle(L"(chi-njector)");
+    SetConsoleTitle(L"(USERMODE) INJ - github.com/wqen");
     SetWindowPos(consoleWindow, NULL, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED);
 }
